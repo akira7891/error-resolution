@@ -20,3 +20,6 @@ Route::get('/', function () {
 */
 
 Route::get('/',App\Http\Controllers\Data\IndexController::class);
+
+Route::get('/create',App\Http\Controllers\Create\IndexController::class);
+Route::post('/create',App\Http\Controllers\Create\CreateController::class);

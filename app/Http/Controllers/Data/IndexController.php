@@ -10,7 +10,7 @@ class IndexController extends Controller
 {
     public function __invoke(Request $request)
     {
-        $datas=Data::all();
+        $datas=Data::orderBy('created_at','DESC')->get();
         return view('data.index',['datas'=>$datas]);
     }
 }

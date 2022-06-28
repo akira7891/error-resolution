@@ -9,9 +9,20 @@
 <body>
     <form action="/create" method="post">
         @csrf
-        <input type="text" name="title">
-        <input type="text" name="content">
-        <input type="submit" value="送信する">
+        <div>
+            <p>データのタイトル</p>
+            <input type="text" name="title">
+        </div>
+
+        <div>
+            <p>データの内容</p>
+            <textarea type="text" name="content" rows="70" cols="100"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="データを記録する">
+        </div>
+
     </form>
     
 </body>

@@ -13,6 +13,6 @@ class PageController extends Controller
         $dataId=(int) $request->route('dataId');
         $data=Data::where('id',$dataId)->first();
         if(is_null($data)){return "存在しないデータです";};
-        return view("data.page",["data"=>$data]);
+        return view("data.page",["data"=>$data,"request"=>$request]);
     }
 }

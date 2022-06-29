@@ -19,9 +19,18 @@ Route::get('/', function () {
 });
 */
 
+//トップページに行くためのルーティング
 Route::get('/',App\Http\Controllers\Data\IndexController::class);
 
+//データの新規登録をするページに行くためのルーティング
 Route::get('/create',App\Http\Controllers\Create\IndexController::class);
+//データベースにデータの追加をするためのルーティング
 Route::post('/create',App\Http\Controllers\Create\CreateController::class);
 
+//個別のデータのページに行くためのルーティング
 Route::get('/{dataId}',App\Http\Controllers\Data\PageController::class);
+
+
+Route::get('/update/{dataId}',App\Http\Controllers\Update\IndexController::class);
+Route::post('/update/{dataId}',App\Http\Controllers\Update\UpdateController::class);
+

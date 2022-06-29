@@ -13,5 +13,6 @@
     <a href="/">戻る</a>
     <h1>{{$data->title}}</h1>
     <p>{{$data->content}}</p>
+    <a href="/update/{{$request->route('dataId')}}">データを編集する</a>
 </body>
 </html>

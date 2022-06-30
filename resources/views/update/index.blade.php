@@ -17,7 +17,7 @@
 
         <div>
             <p>データの内容</p>
-            <textarea type="text" name="content" rows="70" cols="100">{{$data->content}}</textarea>
+            <textarea type="text" name="content" rows="20" cols="100">{{$data->content}}</textarea>
         </div>
 
         <div>

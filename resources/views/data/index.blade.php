@@ -12,7 +12,7 @@
     <a href="/create">データの新規登録</a>
     <h1>データ一覧</h1>
     @foreach($datas as $data)
-    <a href="/{{$data->id}}">{{$data->title}}</a>
+    <a href="/{{$data->id}}">{{$data->title}}</a>　作成日{{$data->created_at}}　更新日{{$data->updated_at}}
     <br>
     @endforeach
 </body>

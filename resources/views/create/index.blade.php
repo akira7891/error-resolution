@@ -7,6 +7,7 @@
     <title>データの登録画面</title>
 </head>
 <body>
+    <a href="/">戻る</a>
     <form action="/create" method="post">
         @csrf
         <div>
@@ -16,7 +17,7 @@
 
         <div>
             <p>データの内容</p>
-            <textarea type="text" name="content" rows="70" cols="100"></textarea>
+            <textarea type="text" name="content" rows="20" cols="100"></textarea>
         </div>
 
         <div>
